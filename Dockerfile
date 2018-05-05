@@ -10,7 +10,7 @@ COPY uwsgi.ini /app
 RUN rm /etc/nginx/conf.d/nginx.conf
 COPY nginx.conf /etc/nginx/conf.d/ 
 
-RUN rm /etc/logrotate.d/supervisor
-COPY supervisor /etc/logrotate.d/
+#RUN rm /etc/logrotate.d/supervisor
+#COPY supervisor /etc/logrotate.d/
 
-CMD ["chmod", "+x", "/app/cron.sh", "&", "sh" "/app/cron.sh"]
+#CMD ["chmod", "+x", "/app/cron.sh", "&", "sh" "/app/cron.sh"]
