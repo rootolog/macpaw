@@ -1,2 +1,4 @@
 #!/bin/bash
-wget -qO - eth0.me
+touch pubip.html
+wget -qO - eth0.me > pubip
+
